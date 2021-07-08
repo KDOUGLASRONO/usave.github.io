@@ -1,0 +1,175 @@
+<!Doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="C:\Users\HP\Desktop\html\WaziHub\CSS\home.css" />
+</head>
+<body>
+    <nav>
+        <img src="C:\Users\HP\Desktop\html\WaziHub\images\usave logo.png" />
+        <ul>
+            <li><a href="C:\Users\HP\Desktop\html\WaziHub\html\Home.html">HOME</a></li>
+            <li><a href="C:\Users\HP\Desktop\html\WaziHub\html\About.html">ABOUT</a></li>
+            <li><a href="C:\Users\HP\Desktop\html\WaziHub\html\usave.html">USAVE ENGINE</a></li>
+            <li><a href="C:\Users\HP\Desktop\html\WaziHub\html\Our process.html">OUR PROCESS</a></li>
+            <li><a href="C:\Users\HP\Desktop\html\WaziHub\html\Projects.html">PROJECTS</a></li>
+        </ul>
+        <div class="menu">
+            <button onclick="myFunction()" class="dropbutton">MENU</button>
+            <div id="myMenu" class="menu-content">
+                <a href="C:\Users\HP\Desktop\html\WaziHub\html\Home.html">HOME</a>
+                <a href="C:\Users\HP\Desktop\html\WaziHub\html\About.html">ABOUT</a>
+                <a href="C:\Users\HP\Desktop\html\WaziHub\html\usave.html">USAVE ENGINE</a>
+                <a href="C:\Users\HP\Desktop\html\WaziHub\html\Our process.html">OUR PROCESS</a>
+                <a href="C:\Users\HP\Desktop\html\WaziHub\html\Projects.html">PROJECTS</a>
+            </div>
+        </div>
+    </nav>
+    <!--script for button function-->
+    <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myMenu").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbutton')) {
+                var dropdowns = document.getElementsByClassName("menu-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+    <div class="welcome">
+        <div class="right">
+            <p>Energy Management Solutions<br /><a href="C:\Users\HP\Desktop\html\WaziHub\html\About.html">more info</a></p>
+        </div>
+        <div class="left">
+            <p>Monitoring and Simulations<br /><a href="C:\Users\HP\Desktop\html\WaziHub\html\About.html">more info</a></p>
+        </div>
+    </div>
+    <div class="info">
+        <div class="monitoring">
+            <p style="font-family:Verdana; color:green;"><i>MONITORING</i></p>
+            <p>
+                Energy transparency is key in understanding energy usage pattern for your institutions. Through our
+                advanced I.O.T infrastructure we build a digital represantation of your energy consumption patterns.
+                This is the first step towards continuous energy cost reduction.
+            </p>
+        </div>
+        <div class="monitoring">
+            <p style="font-family:Verdana; color:green;"><i>SIMULATIONS</i></p>
+            <p>
+                We have fast network of energy efficiency and renewable energy solutions. With data harvested by our I.O.T technology
+                we simulate your energy energy consumptions patterns against all the available energy solutions
+                and select the one that gives you the <strong>highest return on investment</strong>
+            </p>
+
+        </div>
+    </div>
+    <div class="process">
+        <h2>OUR 4-STEP PROCESS</h2>
+        <div class=" list">
+            <div class=" column">
+                <p>
+                    <span style="font-family: Verdana; font-size: 18px; color: cadetblue;">01. free survey</span><br /><br /><br />Our team survey your institution and a create a database of your electrical appliances and develop a design for I.O.T installation
+                </p>
+            </div>
+            <div class=" column">
+                <p>
+                    <span style="font-family: Verdana; font-size: 18px; color: cadetblue;">02. design and I.O.T installation</span><br /><br />Our team with small investment will install I.O.T infrustructure
+                    to facilitate real time monitoring of energy consumption and parameters that affect energy use
+                </p>
+            </div>
+            <div class=" column">
+                <p>
+                    <span style="font-family: Verdana; font-size: 18px; color: cadetblue;">03. simulations</span><br /><br /> With data collected we carry out cloud simulations against all available solutions and recomend to you
+                    the solution that gives you the highest return on investment.
+                </p>
+            </div>
+            <div class=" column">
+                <p>
+                    <span style="font-family: Verdana; font-size: 18px; color: cadetblue;">04 .investment</span><br /><br />Then through our platform you initiate procurement of the solution that yields the highest returns and you begin the journey of cutting down your electricity cost.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="container">
+            <div class="contact">
+                <p>
+                    <img src="C:\Users\HP\Desktop\html\WaziHub\images\usave logo.png" /><br /><br /><br /><br /><br /><br />
+                    <br /><span style=" color:lawngreen;"> Contact us on</span> <br /><br /> +254727873698<br /><br />Begin your sustainable energy consumption today by
+                    investing in our I.O.T and unlock energy efficiency and renewable energy investment opportunities
+                    and reduce your energy cost significantly
+                </p>
+            </div>
+
+        </div>
+        <div class="container span-2">
+            <form action="https://formspree.io/f/mvodqjwo" method="POST">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">First Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Last Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="phonenumber">Phone number</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="phone" name="phone" placeholder="+254700000000">
+                        <!--
+                           <select id="country" name="country">
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                            </select>
+                        -->
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">email</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="email" name="email" placeholder="company@company.com">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="subject" name="subject" placeholder="your message.." style="height:200px"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Send Message">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

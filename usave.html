@@ -1,0 +1,268 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>the usave engine</title>
+    <link rel="stylesheet" href="C:\Users\HP\Desktop\html\WaziHub\CSS\usave.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.2/dist/chart.min.js"></script>
+    <script src="C:\Users\HP\Desktop\html\WaziHub\javascript\calculations.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <nav>
+        <img src="C:\Users\HP\Desktop\html\WaziHub\images\usave logo.png" />
+        <ul>
+            <li><a href="C:\Users\HP\Desktop\html\WaziHub\html\Home.html">HOME</a></li>
+            <li><a href="C:\Users\HP\Desktop\html\WaziHub\html\About.html">ABOUT</a></li>
+            <li><a href="C:\Users\HP\Desktop\html\WaziHub\html\usave.html">USAVE ENGINE</a></li>
+            <li><a href="C:\Users\HP\Desktop\html\WaziHub\html\Our process.html">OUR PROCESS</a></li>
+            <li><a href="C:\Users\HP\Desktop\html\WaziHub\html\Projects.html">PROJECTS</a></li>
+        </ul>
+        <div class="menu">
+            <button onclick="myFunction()" class="dropbutton">MENU</button>
+            <div id="myMenu" class="menu-content">
+                <a href="C:\Users\HP\Desktop\html\WaziHub\html\Home.html">HOME</a>
+                <a href="C:\Users\HP\Desktop\html\WaziHub\html\About.html">ABOUT</a>
+                <a href="C:\Users\HP\Desktop\html\WaziHub\html\usave.html">USAVE ENGINE</a>
+                <a href="C:\Users\HP\Desktop\html\WaziHub\html\Our process.html">OUR PROCESS</a>
+                <a href="C:\Users\HP\Desktop\html\WaziHub\html\Projects.html">PROJECTS</a>
+            </div>
+        </div>
+    </nav>
+    <!--script for button function-->
+    <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myMenu").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbutton')) {
+                var dropdowns = document.getElementsByClassName("menu-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+    <div class="main" style="height:80vh; width:100%">
+        <canvas id="myChart"></canvas>
+    </div>
+    <div class="savings" style="height:80vh; width:100%">
+        <canvas id="savings_chart"></canvas>
+
+    </div>
+    <div class="return">
+        <h1>RETURN ON INVESTMENT</h1>
+        <p>
+            Return on Investment (R.O.I) is calculated by taking into consideration initial cost, energy savings, warranty.<br /> R.O.I
+            Therefore is an indication of the solution that yields the highest value for your money.
+        </p>
+        <p class=" table" style="color:darkslategrey;"><strong>TABLE SHOWING 4-DIFFERENT L.E.D SOLUTIONS DATA FOR FLOURESCENT RETROFITS</strong></p>
+        <table>
+            <tr>
+                <th>L.E.D TYPE</th>
+                <th>POWER</th>
+                <th>LUMENS/WATT</th>
+                <th>LUMENS</th>
+                <th>COST</th>
+                <th>WARRANTY</th>
+            </tr>
+            <tr>
+                <td>ARKSHINE</td>
+                <td>10</td>
+                <td>180</td>
+                <td>1,800</td>
+                <td>1,200</td>
+                <td>5 years</td>
+            </tr>
+            <tr>
+                <td>PHILIPS</td>
+                <td>14</td>
+                <td>130</td>
+                <td>1,820</td>
+                <td>1,500</td>
+                <td>5 years</td>
+            </tr>
+            <tr>
+                <td>ENSAVE</td>
+                <td>18</td>
+                <td>100</td>
+                <td>1,800</td>
+                <td>900</td>
+                <td>1 year</td>
+            </tr>
+            <tr>
+                <td>POWERMAX</td>
+                <td>18</td>
+                <td>100</td>
+                <td>1,800</td>
+                <td>850</td>
+                <td>1 year</td>
+            </tr>
+        </table>
+    </div>
+    <div class="ROI">
+        <h3><i>Investment essentials for each solution from our solution providers</i></h3>
+        <div class="figures">
+            <div class="one">
+                <i><span style="font-size:40px; color:yellow">01</span><br />Arkshine retrofit + dimming</i><br /><br />
+                <p>
+                    Retrofiting of your lights with <strong>ARKSHINE LED</strong> and adding dimmers to dim lights based on available light
+                    from ouside. Lights completely go off when there is enough light from outside<br /><br />
+                </p>
+                <div style="font-size:18px;color:yellow">
+                    <p><i>Estimated cost of investmet = 19,500 kenyan shillings</i></p><br />
+                    <p><i> Payback Period = <span id="arkshine dimming" style="color:goldenrod; font-size:24px"></span></i><span style="color:goldenrod; font-size: 24px "> MONTHS</span></p><br />
+                    <p><i> 5-YEAR SAVINGS = <span id="arkshine dimming 5year savings" style="color:goldenrod; font-size:24px"></span></i><span style="color:goldenrod; font-size: 24px "> KES</span></p><br />
+                    <p><i> Return On Investments = <span id="arkshine dimming roi" style="color:goldenrod; font-size:24px"></span></i></p><br />
+                </div>
+            </div>
+            <div class="one">
+                <i>
+                    <span style="font-size:40px; color:yellow">02</span><br />Arkshine retrofit + Lux sensor + Occupancy
+                </i><br /><br />
+                <p>
+                    Retrofiting of your lights with<strong>ARKSHINE LED</strong> and adding sensors to switch off
+                    when there is no occupancy and there is enough natural light.<br /><br />
+                </p>
+                <div style="font-size:18px;color:yellow">
+
+                    <p><i>Estimated cost of investmet = 20,800 kenyan shillings</i></p><br />
+                    <p><i> Payback Period = <span id="arkshine ldrpir" style="color:darkgoldenrod; font-size:24px"></span></i><span style="color: darkgoldenrod; font-size: 24px "> MONTHS</span></p><br />
+                    <p><i> 5-YEAR SAVINGS = <span id="arkshine ldrpir 5year savings" style="color:goldenrod; font-size:24px"></span></i><span style="color: goldenrod; font-size: 24px "> KES</span></p><br />
+                    <p><i> Return On Investments = <span id="arkshine ldrpir roi" style="color:goldenrod; font-size:24px"></span></i></p><br />
+
+                </div>
+            </div>
+            <div class=" one">
+                <i><span style="font-size:40px; color:yellow">03</span><br />Arkshine retrofit</i><br /><br />
+                <p>
+                    Replacement of your lights with <strong>ARKSHINE LED</strong> only.<br /><br /><br /><br /><br /><br />
+                </p>
+                <div style="font-size:18px;color:yellow">
+                    <p><i>Estimated cost of investmet = 15,600 kenyan shillings</i></p><br />
+                    <p><i> Payback Period = <span id="arkshine" style="color:goldenrod; font-size:24px"></span></i><span style="color: goldenrod; font-size: 24px "> MONTHS</span></p><br />
+                    <p><i> 5-YEAR SAVINGS = <span id="arkshine 5year savings" style="color:goldenrod; font-size:24px"></span></i><span style="color: goldenrod; font-size: 24px "> KES</span></p><br />
+                    <p><i> Return On Investments = <span id="arkshine roi" style="color:goldenrod; font-size:24px"></span></i></p><br />
+
+                </div>
+            </div>
+            <div class=" one">
+                <i><span style="font-size:40px; color:yellow">04</span><br />PHILIPS Retrofit</i><br /><br />
+                <p>
+                    Replacement of your lights with <strong>PHILIPS LED</strong> only<br /><br />
+                </p>
+                <div style="font-size:18px;color:yellow">
+
+                    <p><i>Estimated cost of investmet = 19,500 kenyan shillings</i></p><br />
+                    <p><i> Payback Period = <span id="philips" style="color:goldenrod; font-size:24px"></span></i><span style="color: goldenrod; font-size: 24px "> MONTHS</span></p><br />
+                    <p><i> 5-YEAR SAVINGS = <span id="philips 5year savings" style="color:goldenrod; font-size:24px"></span></i><span style="color: goldenrod; font-size: 24px "> KES</span></p><br />
+                    <p><i> Return On Investments = <span id="philips roi" style="color:goldenrod; font-size:24px"></span></i></p><br />
+
+                </div>
+            </div>
+            <div class="one">
+                <i><span style="font-size:40px; color:yellow">05</span><br />Ensave Retrofit</i><br /><br />
+                <p>
+                    Replacement of your lights with <strong>ENSAVE LED</strong> only.<br /><br />
+                </p>
+                <div style="font-size:18px;color:yellow">
+                    <p><i>Estimated cost of investmet = 11,700 kenyan shillings</i></p><br />
+                    <p><i> Payback Period = <span id="ensave" style="color:goldenrod; font-size:24px"></span></i><span style="color: goldenrod; font-size: 24px "> MONTHS</span></p><br />
+                    <p><i> 5-YEAR SAVINGS = <span id="ensave 1year savings" style="color:goldenrod; font-size:24px"></span></i><span style="color: goldenrod; font-size: 24px "> KES</span></p><br />
+                    <p><i> Return On Investments = <span id="ensave roi" style="color:goldenrod; font-size:24px"></span></i></p><br />
+                </div>
+            </div>
+            <div class="one">
+                <i><span style="font-size:40px; color:yellow">06</span><br />Powermax Retrofit</i><br /><br />
+                <p>
+                    Replacement of your lights with <strong>POWERMAX LED</strong> only.<br /><br />
+                </p>
+                <div style="font-size:18px;color:yellow">
+                    <p><i>Estimated cost of investmet = 11,050 kenyan shillings</i></p><br />
+                    <p><i> Payback Period = <span id="powermax" style="color:goldenrod; font-size:24px"></span></i><span style="color: goldenrod; font-size: 24px "> MONTHS</span></p><br />
+                    <p><i> 5-YEAR SAVINGS = <span id="powermax 1year savings" style="color:goldenrod; font-size:24px"></span></i><span style="color: goldenrod; font-size: 24px "> KES</span></p><br />
+                    <p><i> Return On Investments = <span id="powermax roi" style="color:goldenrod; font-size:24px"></span></i></p><br />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="container">
+            <div class="contact">
+                <p>
+                    <img src="C:\Users\HP\Desktop\html\WaziHub\images\usave logo.png" /><br /><br /><br /><br /><br /><br />
+                    <br /><span style=" color:lawngreen;"> Contact us on</span> <br /><br /> +254727873698<br /><br />Begin your sustainable energy consumption today by
+                    investing in our I.O.T and unlock energy efficiency and renewable energy investment opportunities
+                    and reduce your energy cost significantly
+                </p>
+            </div>
+
+        </div>
+        <div class="container span-2">
+            <form action="https://formspree.io/f/mvodqjwo" method="POST">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">First Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Last Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="phonenumber">Phone number</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="phone" name="phone" placeholder="+254700000000">
+                        <!--
+                           <select id="country" name="country">
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                            </select>
+                        -->
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">email</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="email" name="email" placeholder="company@company.com">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="subject" name="subject" placeholder="your message.." style="height:200px"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Send Message">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
