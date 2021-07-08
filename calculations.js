@@ -1,6 +1,6 @@
-const url_energy = 'https://api.waziup.io/api/v2/sensors_data?sort=dsc&calibrated=true&limit=10000&device_id=60d9fef6957a2200070eb699&sensor_id=illuminanceSensor_1';
-const url_lumens = 'https://api.waziup.io/api/v2/sensors_data?sort=dsc&calibrated=true&limit=10000&device_id=60d9fef6957a2200070eb699&sensor_id=illuminanceSensor_0';
-const url_occupancy = 'https://api.waziup.io/api/v2/sensors_data?sort=dsc&calibrated=true&limit=10000&device_id=60d9fef6957a2200070eb699&sensor_id=digitalOutput_0';
+const url_energy = 'https://api.waziup.io/api/v2/sensors_data?sort=dsc&calibrated=true&limit=10000&device_id=60e6fa1f7845240007982042&sensor_id=illuminanceSensor_1';
+const url_lumens = 'https://api.waziup.io/api/v2/sensors_data?sort=dsc&calibrated=true&limit=10000&device_id=60e6fa1f7845240007982042&sensor_id=illuminanceSensor_0';
+const url_occupancy = 'https://api.waziup.io/api/v2/sensors_data?sort=dsc&calibrated=true&limit=10000&device_id=60e6fa1f7845240007982042&sensor_id=digitalOutput_0';
 
 async function get_data() {
     //data for current sensor
