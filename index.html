@@ -1,0 +1,196 @@
+<!Doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="C:\Users\HP\Desktop\html\WaziHub\CSS\process.css" />
+</head>
+<body>
+    <nav>
+        <img src="https://usavediodetech.co.ke/logo.png" />
+        <ul>
+            <li><a href="C:\Users\HP\Desktop\html\WaziHub\html\Home.html">HOME</a></li>
+            <li><a href="C:\Users\HP\Desktop\html\WaziHub\html\About.html">ABOUT</a></li>
+            <li><a href="C:\Users\HP\Desktop\html\WaziHub\html\usave.html">USAVE ENGINE</a></li>
+            <li><a href="C:\Users\HP\Desktop\html\WaziHub\html\Our process.html">OUR PROCESS</a></li>
+            <li><a href="C:\Users\HP\Desktop\html\WaziHub\html\Projects.html">PROJECTS</a></li>
+
+        </ul>
+        <div class="menu">
+            <button onclick="myFunction()" class="dropbutton">MENU</button>
+            <div id="myMenu" class="menu-content">
+                <a href="C:\Users\HP\Desktop\html\WaziHub\html\Home.html">HOME</a>
+                <a href="C:\Users\HP\Desktop\html\WaziHub\html\About.html">ABOUT</a>
+                <a href="C:\Users\HP\Desktop\html\WaziHub\html\usave.html">USAVE ENGINE</a>
+                <a href="C:\Users\HP\Desktop\html\WaziHub\html\Our process.html">OUR PROCESS</a>
+                <a href="C:\Users\HP\Desktop\html\WaziHub\html\Projects.html">PROJECTS</a>
+            </div>
+        </div>
+    </nav>
+    <!--script for button function-->
+    <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myMenu").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbutton')) {
+                var dropdowns = document.getElementsByClassName("menu-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+    <div class=" intro">
+        <h1>OUR PROCESS</h1>
+    </div>
+    <div class="saving">
+        <div class="savin">
+            SAVING MONEY <br />HAS<br />NEVER BEEN EASIER
+        </div>
+        <div class="savin">
+            <h3 style="font-family:verdana; color:green; font-size:14px;">Switch on to ---</h3><br /><h2>
+                <i>
+                    A Sustainable Future
+                    Today
+                </i>
+            </h2><br /><p style="font-size:24px">
+                Lack of
+                databased energy efficiency and renewable energy upgrades is not sustainable. Join the data revolution today and secure a
+                sustainable future
+            </p>
+        </div>
+    </div>
+
+    <div class="proces">
+        <h2><br /><i>OUR 4_STEP PROCESS</i></h2>
+        <div class="process">
+            <div class="two">
+                <span style="color:green; font-size:44px;">1.</span><br /> <h3>I.O.T ISNTALLATION</h3><br /> <p>
+                    A small initial investment is made by clients to facilitate real time monitoring
+                    and simulations
+                </p>
+            </div>
+            <div class="two">
+                <span style="color:green; font-size:44px;">2.</span><br /> <h3>SIMULATION</h3><br /><p>
+                    Monitoring And simulations is the holy grail of this technology. we simulate against available solutions in
+                    order to select the solution that yields the highest return on investment
+                </p>
+            </div>
+            <div class="two">
+                <span style="color:green; font-size:44px;">3.</span><br /> <h3>INVESTMENT</h3><br /> <p>
+                    On our platform we give you an opportunity to initiate procurement of the solution that returns the highest
+                    value for your investment
+                </p>
+            </div>
+            <div class="two">
+                <span style="color:green; font-size:44px;">4.</span><br /> <h3>MONITORING</h3><br /><p>
+                    After investment we continue monitoring to track perfomance and also continually look for
+                    opprtunies to further reduce
+                    energy cost
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class=" value">
+        <h2><i>Our core values:</i></h2>
+        <div class="values">
+            <div class="three">
+                <h3>Sustainability</h3><br /><p>
+                    Databased investments ensures you invest in solutions
+                    with highest return on investment
+                </p>
+            </div>
+            <div class="three">
+                <h3>Quality</h3><br /> <p>
+                    With network of solution providers and simulations we select
+                    products that meets the highest quality standards
+                </p>
+            </div>
+            <div class="three">
+                <h3>Environment centric</h3><br /><p>
+                    Our approach is from 1<sup>st</sup> principles.
+                    We reduce Co<sub>2</sub> emmisions by biggest margin
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="container">
+            <div class="contact">
+                <p>
+                    <img src="C:\Users\HP\Desktop\html\WaziHub\images\usave logo.png" /><br /><br /><br /><br /><br /><br />
+                    <br /><span style=" color:lawngreen;"> Contact us on</span> <br /><br /> +254727873698<br /><br />Begin your sustainable energy consumption today by
+                    investing in our I.O.T and unlock energy efficiency and renewable energy investment opportunities
+                    and reduce your energy cost significantly
+                </p>
+            </div>
+
+        </div>
+        <div class="container span-2">
+            <form action="https://formspree.io/f/mvodqjwo" method="POST">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">First Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Last Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="phonenumber">Phone number</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="phone" name="phone" placeholder="+254700000000">
+                        <!--
+                           <select id="country" name="country">
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                            </select>
+                        -->
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">email</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="email" name="email" placeholder="company@company.com">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="subject" name="subject" placeholder="your message.." style="height:200px"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Send Message">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
