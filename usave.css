@@ -304,7 +304,7 @@ input[type=submit] {
     img {
     width: 100px;
     height: 100px;
-    float: left;
+    float: right;
     }
     .savings{
         width:100%;
@@ -314,7 +314,9 @@ input[type=submit] {
         width:100%;
     }
     .table{
-        width:100%
+        width:100%;
+        padding:0;
+        text-align:center;
     }
     .ROI{
         width:100%
