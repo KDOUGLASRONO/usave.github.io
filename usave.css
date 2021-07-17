@@ -319,12 +319,25 @@ input[type=submit] {
     .container{
         margin:0;
         width:100%;
-        padding:0;
+        padding-top:10px;
     }
+    .contact{
+        width:100%;
+        padding-top:10px;    
+    }
+    .contact img{
+        float:left;
+    }
+    .one{
+        width:100%;
+        border-radius:0;
+        padding-top:10px;
+    }
+        
     .container span_2{
         margin:0;
         width:100%;
-        padding:0;
+        padding-top:10px;
     
     }
 }
