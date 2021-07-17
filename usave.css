@@ -292,12 +292,19 @@ input[type=submit] {
     display: block;
 }
 @media(max-width:500px){
-    padding:0;
-    margin:0;
-    width:100%;
+    body{
+        padding:0;
+        margin:0;
+        width:100%;
+    }
     .main{
         width:100%;
         padding:0;
+    }
+    img {
+    width: 100px;
+    height: 100px;
+    float: left;
     }
     .savings{
         width:100%;
