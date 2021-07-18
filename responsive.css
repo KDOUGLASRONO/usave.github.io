@@ -171,6 +171,26 @@ input[type=submit] {
         width: 100%;
         margin-top: 0;
     }
+    .about p{
+        padding:1em;
+    }
+    .slogan{
+        padding:1em;
+        font-size:1vw;
+    }
+    .responsive {
+        padding: 0;
+        margin: 10px 0 0 0;
+    }
+    .container {
+        margin: 10px 0 0 0;
+    }
+    .contact {
+        width: 100%;
+    }
+    .contact p img {
+        float: left;
+    }
 }
 
 @media(min-width:550px) {
