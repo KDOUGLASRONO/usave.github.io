@@ -298,7 +298,6 @@ input[type=submit] {
         padding:0;
     }
     img{
-        display:none;
     }
     .main{
         padding:0;
@@ -311,7 +310,7 @@ input[type=submit] {
         padding:10px;
     }
     .return h1{
-        font-size:6vw;
+        font-size:5vw;
     }
     .table{
         padding-top:20px;
