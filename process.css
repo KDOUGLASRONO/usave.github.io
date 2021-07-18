@@ -193,6 +193,52 @@ input[type=submit] {
         width: 100%;
         margin-top: 0;
     }
+    .intro{
+        width:100vw;
+    }
+    .saving{
+        width:100vw;
+        padding:0;
+    }
+    .savin{
+        width:100vw;
+        padding:1em;
+        border-radius:0;
+    }
+    .proces h2{
+        padding-left:1em;
+    }
+    .process{
+        padding:0;
+    }
+    .value h2{
+        padding:1em;
+    }
+    .values{
+        padding:0;
+    }
+    .three{
+        padding:1em;
+    }
+    .two{
+        padding:1em;
+    }
+    .responsive {
+        padding: 0;
+        margin: 10px 0 0 0;
+    }
+
+    .container {
+        margin: 10px 0 0 0;
+    }
+
+    .contact {
+        width: 100%;
+    }
+
+    .contact p img {
+        float: left;
+    }
 }
 
 @media(min-width:550px) {
