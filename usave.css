@@ -298,6 +298,7 @@ input[type=submit] {
         padding:0;
     }
     img{
+        display:none;
     }
     .main{
         padding:0;
@@ -308,6 +309,9 @@ input[type=submit] {
     .return{
         margin: 20px 0 0 0;
         padding:10px;
+    }
+    return h1{
+        font-size:6vw;
     }
     .table{
         padding-top:20px;
