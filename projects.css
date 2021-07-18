@@ -136,6 +136,24 @@ input[type=submit] {
         width: 100%;
         margin-top: 0;
     }
+    .responsive {
+        padding: 0;
+        margin: 20px 0 0 0;
+        width: 100vw;
+    }
+
+    .container {
+        width: 100vw;
+        padding: 1em;
+    }
+
+    .contact {
+        width: 100%;
+    }
+
+    .contact p img {
+        float: left;
+    }
 }
 
 @media(min-width:550px) {
