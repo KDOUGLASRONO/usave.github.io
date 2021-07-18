@@ -69,7 +69,7 @@ nav #icon{
 }
 
 .savings {
-    margin-top: 0px;
+    margin-top: 20px;
     background-color: papayawhip;
     font-family: Verdana;
     text-align: center;
@@ -78,10 +78,8 @@ nav #icon{
 }
 .table{
     padding: 20px 1.5% 10px 1.5%;
-    font-size:5vw;
 }
 table{
-    font-size:5vw;
     width:100%;
     text-align:center;
 }
@@ -278,6 +276,21 @@ input[type=submit] {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
+
+    .menu-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+.menu a:hover {
+    background-color: dimgray;
+}
+
+.show {
+    display: block;
+}
 @media(max-width: 500px){
     nav{
         width:100%;
@@ -337,17 +350,3 @@ input[type=submit] {
 }
 
 
-    .menu-content a {
-        color: white;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-    }
-
-.menu a:hover {
-    background-color: dimgray;
-}
-
-.show {
-    display: block;
-}
