@@ -34,7 +34,7 @@ async function get_data() {
     const arkshine_ldrpir = [];
     var i;
     for (i = 0; i < data.length; i++) {
-        data_energy[i] = (((data[i].value - 610) * 4.88) / 100) * 0.7 * 240;
+        data_energy[i] = (((data[i].value - 623) * 4.88) / 100) * 0.7 * 240;
     }
     for (i = 0; i < data.length; i++) {
         if (data_energy[i] > 100) {
